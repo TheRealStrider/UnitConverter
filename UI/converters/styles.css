@@ -1,0 +1,132 @@
+/*COLORS*/
+/*
+--text: #ffffff;
+--background: #141429;
+--primary: #00ddff;
+--secondary: #1a2e5b;
+--accent: #263da6;
+*/
+
+/*FONTS*/
+/*Ubuntu Font*/
+@font-face {
+    font-family: Ubuntu;
+    src: url(../../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../../fonts/Ubuntu/Ubuntu-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../../fonts/Ubuntu/Ubuntu-Italic.ttf);
+    font-style: italic;
+}
+
+/*Roboto Font*/
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/Roboto/Roboto-Italic.ttf);
+    font-style: italic;
+}
+
+body {
+    color: #ffffff;
+    background-color: #141429;
+}
+
+#content {
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+}
+
+h1 {
+    font-family: Ubuntu;
+    font-weight: bold;
+    user-select: none;
+}
+
+#content {
+    text-align: center;
+}
+
+#converter {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+
+    font-family: Ubuntu;
+    font-size: 20px;
+}
+
+#converter input, #converter select {
+    text-align: center;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #263da6;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+
+    border-style: solid;
+    border-radius: 50px;
+    border-color: #1a2e5b;
+}
+
+::placeholder {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#value {
+    font-size: 25px;
+    margin-top: 0.5em;
+}
+
+#back {
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+    user-select: none;
+    cursor: pointer;
+
+    font-family: Ubuntu;
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: #263da6;
+
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 2px;
+    border-color: #1a2e5b;
+    transition: all 0.3s ease;
+}
+
+#back:hover {
+    background-color: #1a2e5b;
+    border-color: #263da6;
+    box-shadow: 0px 0px 10px #00ddff;
+}

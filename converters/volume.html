@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../UI/converters/styles.css">
+    <script src="../UI/converters/volume.js"></script>
+    <title>Volume Converter</title>
+</head>
+
+<body>
+    <div id="content">
+        <h1>Volume Converter</h1>
+        <form id="converter">
+            <label for="number">Number</label>
+            <input id="number" type="number" name="length" min="0" placeholder="Enter volume" value="1"
+                oninput="calculation()">
+            <label for="convert_from">Convert From</label>
+            <select id="convert_from" name="from" onchange="calculation()">
+                <option value="cbm">Cubic Meter</option>
+                <option value="l" selected>Liter</option>
+                <option value="ml">Mililiter</option>
+                <option value="gal">Gallon</option>
+                <option value="qt">Quart</option>
+                <option value="pt">Pint</option>
+                <option value="c">Cup</option>
+                <option value="oz">Ounce</option>
+            </select>
+            <label for="convert_to">Convert To</label>
+            <select id="convert_to" name="to" onchange="calculation()">
+                <option value="cbm">Cubic Meter</option>
+                <option value="l">Liter</option>
+                <option value="ml">Mililiter</option>
+                <option value="gal" selected>Gallon</option>
+                <option value="qt">Quart</option>
+                <option value="pt">Pint</option>
+                <option value="c">Cup</option>
+                <option value="oz">Ounce</option>
+            </select>
+            <label>Value</label>
+            <span id="result">0.264</span>
+        </form>
+        <a id="back" onclick="backToStart()">Back</a>
+    </div>
+</body>
+
+</html>

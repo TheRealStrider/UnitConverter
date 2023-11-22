@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../UI/converters/styles.css">
+    <script src="../UI/converters/length.js"></script>
+    <title>Length Converter</title>
+</head>
+<body>
+    <div id="content">
+        <h1>Length Converter</h1>
+        <form id="converter">
+            <label for="number">Number</label>
+            <input id="number" type="number" name="length" min="0" placeholder="Enter length" value="1" oninput="calculation()">
+            <label for="convert_from">Convert From</label>
+            <select id="convert_from" name="from" onchange="calculation()">
+                <option value="km">Kilometer</option>
+                <option value="m" selected>Meter</option>
+                <option value="cm">Centimeter</option>
+                <option value="mm">Millimeter</option>
+                <option value="mi">Mile</option>
+                <option value="yd">Yard</option>
+                <option value="ft">Feet</option>
+                <option value="in">Inch</option>
+            </select>
+            <label for="convert_to">Convert To</label>
+            <select id="convert_to" name="to" onchange="calculation()">
+                <option value="km">Kilometer</option>
+                <option value="m">Meter</option>
+                <option value="cm">Centimeter</option>
+                <option value="mm">Millimeter</option>
+                <option value="mi" selected>Mile</option>
+                <option value="yd">Yard</option>
+                <option value="ft">Feet</option>
+                <option value="in">Inch</option>
+            </select>
+            <label>Value</label>
+            <span id="result">1609.344</span>
+        </form>
+        <a id="back" onclick="backToStart()">Back</a>
+    </div>
+</body>
+</html>

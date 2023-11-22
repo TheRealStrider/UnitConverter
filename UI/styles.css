@@ -1,0 +1,111 @@
+/*COLORS*/
+/*
+--text: #ffffff;
+--background: #141429;
+--primary: #00ddff;
+--secondary: #1a2e5b;
+--accent: #263da6;
+*/
+
+/*FONTS*/
+/*Ubuntu Font*/
+@font-face {
+    font-family: Ubuntu;
+    src: url(./fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url(./fonts/Ubuntu/Ubuntu-Italic.ttf);
+    font-style: italic;
+}
+
+/*Roboto Font*/
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto/Roboto-Italic.ttf);
+    font-style: italic;
+}
+
+
+
+body {
+    color: #ffffff;
+    background-color: #141429;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Ubuntu;
+    font-weight: bold;
+}
+
+p, a, li, span {
+    font-family: Ubuntu;
+    font-weight: bold;
+}
+
+#content {
+    justify-content: center;
+    text-align: center;
+    user-select: none;
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+}
+
+#content h3 {
+    margin-bottom: 3em;
+}
+
+#converters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#converters a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 80%;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 2em;
+    color : #ffffff;
+    font-size: 15px;
+    background-color: #263da6;
+
+    border-radius: 50px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1a2e5b;
+    transition: all 0.3s ease;
+
+}
+
+#converters a:hover {
+    background-color: #1a2e5b;
+    border-color: #263da6;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #00ddff;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 0.5em;
+    left: 4.5em;
+
+    color: #263da6;
+}
